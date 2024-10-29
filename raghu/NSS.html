@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .top{
+            background-color:#0693e3;
+            color:white;
+            padding:10px;
+            margin-left: auto;
+            a{
+                padding:20px;
+                color: aliceblue;
+            }
+        }
+        
+        .top2{
+            margin-top:auto;
+            background-color:#0693e3;
+            color:white;
+            padding:8px;
+            margin-left: auto;
+            position:sticky;
+            top:0px;
+           
+            a{
+                padding:20px;
+                color: aliceblue;
+            }
+        }
+        .top2 a ul.drop1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.top2 a:hover ul.drop1 {
+    display:block;
+    
+
+}
+
+.drop1 li {
+    list-style-type: none;
+    text-align: left;
+    padding: 12px 16px;
+    position: relative;
+}
+.drop1 li:hover {
+    background-color: #ddd;
+    color:#0693e3;
+}
+.drop1 li {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid black;
+}
+
+.drop1 li:hover {
+    background-color: #e0e0e0;
+}
+
+        a{
+            text-decoration: none;
+            padding: 21px;
+            cursor: pointer;
+        }
+        a:hover{
+            color:black;
+            background-color: aliceblue;
+        }
+        img{
+            height: 570px;
+            width:100%;
+        }
+        .babu{
+            height:10px;
+            width:180px;
+            img{
+                margin-top: 10px;
+                height:100px;
+               width: 40%;
+
+            }
+        }
+        .pawan{ 
+            height:10px;
+            width:15%;
+            padding-right: 30px;
+            img{ 
+                margin-top: 10px;
+                height:100px;
+                width: 100%;
+            }
+        }
+        .mahesh{
+            display: flex;
+        }
+           h2{
+                margin-bottom: auto;
+                color: purple;
+                margin-left: 1130px;
+                font-size: 40px; 
+            }
+            .Admissions{
+                color:red;
+                margin-left: 1320px;
+                margin-top: 2px;
+                font-size: 25px;
+            }
+            .WELCOME{
+                font-family: Arial, Helvetica, sans-serif;
+                width: 45%;
+                margin-left: 10%;
+                p{
+                    padding: 20px;
+                    font-size: 20px;
+                }
+                h3{
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+            }
+            span{
+                color: #0693e3;
+            }
+            .photo1{
+                width:35%;
+                margin-left:55%;
+                margin-top: -520px;
+                img{
+                    height: 400px;
+                }
+            }
+            .photo2{
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 12%;
+            }
+            .matter1{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 20px;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .matter2{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 10px;
+                font-size: 20px;
+            }
+            li{
+                padding:5px;
+            }
+            .heading{
+                margin: 10%;
+                margin-top: 5%;
+                font-size: 25px;
+            }
+            .images{
+                margin: 10%;
+                display: flex;
+                flex-wrap: wrap;
+               margin-top: -50px;
+               
+                img{
+                    height: 250px;
+                    width: auto;
+                    border: solid;
+                }
+            }
+            .sub{
+                padding:18px;
+                text-align: center;
+                border: double;
+                
+            }
+            .last{
+                margin-top: -60px;
+            width: 100%;
+            height: 670px;
+            background-color: rgba(6, 147, 227, 1);
+            border: 0px solid rgba(6, 147, 227, 1);
+        }
+        .bottom{
+            display: flex;
+            background-color: rgba(6, 147, 227, 1);
+             border: 0px solid rgba(6, 147, 227, 1);
+            
+            
+        }
+        .bottom1{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 250px;
+            height: 200px;
+            margin: 30px 0px 0px 30px;
+            margin-left: 75px;
+            background-color: rgba(6, 147, 227, 1);
+
+        }
+        .bottom1 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+        .bat1{
+            padding-bottom: 5px;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .bottom2{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 280px;
+            height: 200px;
+            margin: 30px 0px 0px 70px;
+            background-color: rgba(6, 147, 227, 1);
+        }  
+        .bottom2 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+        .bottom2 .bat2{
+            color: white;
+            font-size: 14px;
+            list-style-type: circle;
+            text-align: left;
+            font-weight: normal;
+            font-family: sans-serif;
+        }
+        .bat2 li{
+            padding: 7px 0px;
+        }
+        .bottom3{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 250px;
+            height: 200px;
+            margin: 30px 90px 0px 70px;
+            background-color: rgba(6, 147, 227, 1);
+        }  
+        .bottom3 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+           
+            
+            </style>
+</head>
+<body>
+    <div class="top">
+        <a>ALUMNI</a>
+        <a>AICTE</a>
+        <a>NAAC</a>
+        <a>IQAC</a>
+        <a>IIC</a>
+        <a>NBA</a>
+        <a>NPTEL</a>
+        <a>NIRF</a>
+        <a>ISO</a>
+        <a>IIRS-ISRO</a>
+        <a>ICT-Tools</a>
+        <a>MATLAB</a>
+        <a>ABC</a>
+        <a>BCDE</a>
+        <a href="fee.html">FEE E-PAYMENTS</a>
+    </div>
+   <div class="mahesh">
+    <div class="pawan"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/RAGHU-Engineering-Collegelogo-1-1.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/naac-a-header-badge-1-1.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/ugc-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/nba-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/jntug-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/aicte-header-badge.png"></div>
+
+   </div>
+<div class="Code">
+    <h2>College Code : RAGU</h2>
+    <p class="Admissions">For Admissions</p>
+    <p class="Admissions">+91 9515127092</p>
+</div>
+    <div class="top2">
+        <a href="web page1.html">Home↓
+            <ul class="drop1">
+                <li>Who We Are</li>
+                <li>Awards & Accreditations</li>
+                <li>Vision & Mission</li>
+                <li>Leadership</li>
+                <li>Governing Body</li>
+                <li>Academic Council</li>
+                <li>Organization Chart</li>
+            </ul>
+        </a>
+        <a>Academics ↓
+            <ul class="drop1" style="margin-left: 91px;">
+                <li>Programs</li>
+                <li>Admissions</li>
+                <li>Committees</li>
+                <li>Academic Year Calendars</li>
+                <li>Departments</li>
+                <li>Research</li>
+                <li>Students Feedbac</li>
+            </ul>
+        </a>
+        <a href="NCC.html">NCC</a>
+        <a href="NSS.html">NSS</a>
+        <a href="sports.html">Sports  </a>
+        <a href="placement.html">Placements ↓
+            <ul class="drop1" style="margin-left: 29.85%;">
+                <li>Company offers</li>
+            </ul>
+        </a>
+        <a>Library</a>
+        <a>News</a>
+        <a>Events</a>
+        <a>Amenities ↓
+            <ul class="drop1" style="margin-left: 55.45%;">
+                <li>Campus Tour</li>
+                <li>Campus Residency</li>
+                <li>Transportation</li>
+                <li>Infrastructure</li>
+                <li>ATM Facility</li>
+                <li>24/7 Wifi Availability</li>
+                <li>Water Plant</li>
+                <li>Cafeteria</li>
+                <li>Security</li>
+                <li>Gymnasium</li>
+                <li>Parking</li>
+
+            </ul>
+        </a>
+        <a>Evaluation ↓
+            <ul class="drop1" style="margin-left: 63.45%;">
+                <li>Exam Notifications</li>
+                <li>Exam Time Tables</li>
+                <li>Result Notifications</li>
+                <li>Academic Regulation</li>
+                <li>Annual Reports</li>
+                <li>Exam Results</li>
+                <li>Exam Section</li>
+            </ul>
+        </a>
+        <a>Student Chapters</a>
+        <a>Student Clubs</a>
+        <a>News Letters</a>
+    </div>
+    <div class="WELCOME">
+        <h3>WELCOME TO <span>NSS @ REC</span></h3>
+        <p>In keeping with the sole aim of the NSS, Raghu Engineering College is associated with National Service Scheme to provide hands on experience to young students in delivering community service. Instilling the spirit of service and promoting active participation in the government led community service activities; Raghu Engineering College has created opportunity for our students to become NSS Volunteers.</p>
+        <p>Helping students expand out of intellectual luxury and inspired from the thoughts of Mahatma Gandhi of involving students in service activities, Raghu Engineering College has been associated with NSS from 2009. Since its inception with a team of 1 Program Officer and 50 Student Volunteers the unit has been actively rendering services in coordination with JNTUK NSS Cell and has grown to the size of 3 units with each unit constituting of 1 Program Officer and 100 student volunteers adding up to 300 Student Volunteers. Of the 3 units of NSS, one is funded by JNTUK NSS Cell and the rest 2 are self-financed by Raghu Engineering College. The cardinal principle of the programme is that it is organized by the students themselves and because of their active participation in social service they get a sense of involvement in the tasks of national development. This has been helping our students identify social problems and developing a sense of civic responsibility.</p>
+    </div>
+    <div class="photo1">
+        <img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/nss@rec.jpg">
+    </div>
+    <div class="photo2">
+        <img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/nss-main-2.jpg">
+    </div>
+    <div class="matter1">
+        <p>The National Service Scheme (NSS) is a Central Sector Scheme of Government of India, Ministry of Youth Affairs & Sports. It provides opportunity to the student youth of 11th & 12th Class of schools at +2 Board level and student youth of Technical Institution, Graduate & Post Graduate at colleges and University level of India to take part in various government led community service activities & programmes.The sole aim of the NSS is to provide hands on experience to young students in delivering community service. Since inception of the NSS in the year 1969, the number of students strength increased from 40,000 to over 3.8 million up to the end of March 2018 students in various universities, colleges and Institutions of higher learning have volunteered to take part in various community service programmes.</p>
+        <br>
+        <p>The NSS Badge Proud to Serve the Nation: All the youth volunteers who opt to serve the nation through the NSS led community service wear the NSS badge with pride and a sense of responsibility towards helping needy. The Konark wheel in the NSS badge having 8 bars signifies the 24 hours of a the day, reminding the wearer to be ready for the service of the nation round the clock i.e. for 24 hours. Red colour in the badge signifies energy and spirit displayed by the NSS volunteers. The Blue colour signifies the cosmos of which the NSS is a tiny part, ready to contribute its share for the welfare of the mankind.</p>
+        <p>Motto: The motto of National Service Scheme is NOT ME BUT YOU</p>
+    </div>
+    <div class="matter2">
+        <ul></ul>
+            <p>Benefits of Being a NSS Volunteer: A NSS volunteer who takes part in the community service programme would either be a college level or a senior secondary level student. Being an active member these student volunteers would have the exposure and experience to be the following:</p>
+            <li>an accomplished social leader</li>
+            <li>an efficient administrator</li>
+            <li>a person who understands human nature</li>
+        </ul>
+    </div>
+
+    <div class="heading">
+        <h3>Commendable Community Service Rendered By</h3>
+        <h3><span>Our Students Has Covered Several Aspects</span></h3>
+    </div>
+    <div class="images">
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/nss-22-wnd.png">
+        <h3>World Environment Day</h3></div>
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/Blood-Donation.jpg">
+        <h3>Blood Donation</h3></div>
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/plantation.jpg">
+        <h3>Plantation</h3></div>
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/Literacy-Health-Camps.jpg">
+        <h3>Literacy & Health Camps</h3></div>
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/yoga.jpg">
+        <h3>Yoga</h3></div>
+        <div class="sub"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/Rally-_-Awareness-Programs.jpg">
+        <h3>Rally / Awareness Programs</h3></div>
+    </div>
+    <div class="last">
+        <div class="bottom">
+             <div class="bottom1">
+                  <h3 class="bat1">Enroll with us</h3>
+<p class="bat">How to apply</p>
+<p class="bat">Admissions</p>
+<p class="bat">Fee structure</p>
+<p class="bat">Student welfare</p>
+<p class="bat">Help desk</p>
+</div>
+<div class="bottom1">
+    <h3 class="bat1">About us</h3>
+<p class="bat">About REC</p>
+<p class="bat">The Chairman desk</p>
+<p class="bat">Governing Council</p>
+<p class="bat">Grievances Cell</p>
+</div>
+<div class="bottom1">
+<h3 class="bat1">Grow with us</h3>
+<p class="bat" >Placements</p>
+<p class="bat">Carere Development</p>
+<p class="bat">Incubation Center</p>
+<p class="bat">RAGHU Connects MATLAB</p>
+<p class="bat">Culture at REC</p>
+<p class="bat">Alumini</p>
+<p class="bat">Jobs at REC</p>
+
+</div>
+<div class="bottom2">
+<h3 class="bat1">Quick Links</h3>
+<p class="bat">Innovation and Startup Policies</p>
+<p class="bat">AICTE</p>
+<p class="bat">IIC</p>
+<p class="bat">RTI</p>
+<p class="bat">Mandatory-Disclosure</p>
+<p class="bat">IQAC</p>
+<p class="bat">NAAC</p>
+<p class="bat">Academic Bank of Credits (ABC)</p>
+<p class="bat">Ombudsman</p>
+<p class="bat">GRIEVANCE</p>
+<ul class="bat2">
+<li >Staff Grievance & Redressal</li>
+<li>Women Grievance & Redressal</li>
+<li> Students Grievance & Redressal</li>
+</ul>  
+<p class="bat">Skill Enhancement Activity</p>
+<p class="bat">Code of Conduct</p>
+<p class="bat">Best Practices</p>
+<p class="bat">Self-Declaration</p>
+<p class="bat">Policies</p>
+</div>
+<div class="bottom3">
+<h3 class="bat1">Get in touch with us</h3>
+<p class="bat">info@raghuengcollege.in</p>
+<p class="bat">08922-248001 /248002</p>
+<p class="bat">8297355115</p>
+<p class="bat">(Training & Placements)</p>
+<p class="bat">Dakamarri,Bheemunipatnam mandal,Visakhapatnam-531162</p>
+</div>
+</div>
+</div>
+   
+</body>
+</html>

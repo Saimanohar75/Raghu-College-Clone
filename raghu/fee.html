@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Payment Page</title>
+    <style>
+         *{
+            margin:0px;
+            padding: 0px;
+        }
+        .top{
+        background-color:#0693e3;
+        color:white;
+        padding:10px;
+        margin-left: auto;
+        
+        a{
+                padding:20px;
+                color: aliceblue;
+            }
+    }
+    
+    .top2{
+            margin-top:auto;
+            background-color:#0693e3;
+            color:white;
+            padding:8px;
+            margin-left: auto;
+            position:sticky;
+            top:0px;
+           
+            a{
+                padding:20px;
+                color: aliceblue;
+            }
+        }
+        .top2 a ul.drop1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: auto;
+}
+.top2 a:hover ul.drop1 {
+    display:block;
+    
+
+}
+
+.drop1 li {
+    list-style-type: none;
+    text-align: left;
+    padding: 12px 16px;
+    position: relative;
+}
+.drop1 li:hover {
+    background-color: #ddd;
+    color:#0693e3;
+}
+.drop1 li {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid black;
+}
+
+.drop1 li:hover {
+    background-color: #e0e0e0;
+}
+
+        a{
+            text-decoration: none;
+            padding: 21px;
+            cursor: pointer;
+        }
+        a:hover{
+            color:black;
+            background-color: aliceblue;
+        }
+        .babu{
+            height:10px;
+            width:180px;
+            img{
+                margin-top: 10px;
+                height:100px;
+               width: 40%;
+
+            }
+        }
+        .pawan{ 
+            height:10px;
+            width:15%;
+            padding-right: 30px;
+            img{ 
+                margin-top: 10px;
+                height:100px;
+                width: 100%;
+            }
+        }
+        .mahesh{
+            display: flex;
+        }
+           h2{
+                margin-bottom: auto;
+                color: purple;
+                margin-left: 1130px;
+                font-size: 40px; 
+            }
+            .Admissions{
+                color:red;
+                margin-left: 1320px;
+                margin-top: 2px;
+                font-size: 25px;
+            }
+        .fee {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            background-color: cadetblue;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .last{
+            width: 100%;
+            height: 670px;
+            background-color: rgba(6, 147, 227, 1);
+            border: 0px solid rgba(6, 147, 227, 1);
+            margin-top: 50px;
+        }
+        .bottom{
+            display: flex;
+            background-color: rgba(6, 147, 227, 1);
+             border: 0px solid rgba(6, 147, 227, 1);
+            
+            
+        }
+        .bottom1{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 250px;
+            height: 200px;
+            margin: 30px 0px 0px 30px;
+            margin-left: 75px;
+            background-color: rgba(6, 147, 227, 1);
+
+        }
+        .bottom1 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+        .bat1{
+            padding-bottom: 5px;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .bottom2{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 280px;
+            height: 200px;
+            margin: 30px 0px 0px 70px;
+            background-color: rgba(6, 147, 227, 1);
+        }  
+        .bottom2 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+        .bottom2 .bat2{
+            color: white;
+            font-size: 14px;
+            list-style-type: circle;
+            text-align: left;
+            font-weight: normal;
+            font-family: sans-serif;
+        }
+        .bat2 li{
+            padding: 7px 0px;
+        }
+        .bottom3{
+            border: 0px solid rgba(6, 147, 227, 1);
+            width: 250px;
+            height: 200px;
+            margin: 30px 90px 0px 70px;
+            background-color: rgba(6, 147, 227, 1);
+        }  
+        .bottom3 .bat{
+            text-align: left;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: white;
+            padding: 7px 0px;
+        }
+            .name{
+                p{
+                    font-size: 35px;
+                    color: #0693e3;
+                    margin-left: -70%;
+                    font-weight: bold;
+                    margin-bottom: 70px;
+                    margin-top: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a>ALUMNI</a>
+        <a>AICTE</a>
+        <a>NAAC</a>
+        <a>IQAC</a>
+        <a>IIC</a>
+        <a>NBA</a>
+        <a>NPTEL</a>
+        <a>NIRF</a>
+        <a>ISO</a>
+        <a>IIRS-ISRO</a>
+        <a>ICT-Tools</a>
+        <a>MATLAB</a>
+        <a>ABC</a>
+        <a>BCDE</a>
+        <a href="fee.html">FEE E-PAYMENTS</a>
+    </div>
+   <div class="mahesh">
+    <div class="pawan"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/RAGHU-Engineering-Collegelogo-1-1.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/naac-a-header-badge-1-1.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/ugc-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/nba-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/jntug-header-badge.png"></div>
+    <div class="babu"><img src="https://www.raghuenggcollege.com/wp-content/uploads/2023/06/aicte-header-badge.png"></div>
+
+   </div>
+<div class="Code">
+    <h2>College Code : RAGU</h2>
+    <p class="Admissions">For Admissions</p>
+    <p class="Admissions">+91 9515127092</p>
+</div>
+    <div class="top2">
+        <a href="web page1.html">Home↓
+            <ul class="drop1">
+                <li>Who We Are</li>
+                <li>Awards & Accreditations</li>
+                <li>Vision & Mission</li>
+                <li>Leadership</li>
+                <li>Governing Body</li>
+                <li>Academic Council</li>
+                <li>Organization Chart</li>
+            </ul>
+        </a>
+        <a>Academics ↓
+            <ul class="drop1" style="margin-left: 91px;">
+                <li>Programs</li>
+                <li>Admissions</li>
+                <li>Committees</li>
+                <li>Academic Year Calendars</li>
+                <li>Departments</li>
+                <li>Research</li>
+                <li>Students Feedbac</li>
+            </ul>
+        </a>
+        <a href="NCC.html">NCC</a>
+        <a href="NSS.html">NSS</a>
+        <a href="sports.html">Sports  </a>
+        <a href="placement.html">Placements ↓
+            <ul class="drop1" style="margin-left: 29.85%;">
+                <li>Company offers</li>
+            </ul>
+        </a>
+        <a>Library</a>
+        <a>News</a>
+        <a>Events</a>
+        <a>Amenities ↓
+            <ul class="drop1" style="margin-left: 55.45%;">
+                <li>Campus Tour</li>
+                <li>Campus Residency</li>
+                <li>Transportation</li>
+                <li>Infrastructure</li>
+                <li>ATM Facility</li>
+                <li>24/7 Wifi Availability</li>
+                <li>Water Plant</li>
+                <li>Cafeteria</li>
+                <li>Security</li>
+                <li>Gymnasium</li>
+                <li>Parking</li>
+
+            </ul>
+        </a>
+        <a>Evaluation ↓
+            <ul class="drop1" style="margin-left: 63.45%;">
+                <li>Exam Notifications</li>
+                <li>Exam Time Tables</li>
+                <li>Result Notifications</li>
+                <li>Academic Regulation</li>
+                <li>Annual Reports</li>
+                <li>Exam Results</li>
+                <li>Exam Section</li>
+            </ul>
+        </a>
+        <a>Student Chapters</a>
+        <a>Student Clubs</a>
+        <a>News Letters</a>
+    </div>
+    <div class="fee">
+<div class="container">
+    <h1><u>Fee Payment</u></h1>
+    <form action="/submit-payment">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amount">Payment Amount:</label>
+        <input type="number" required>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" required>
+
+        <label for="expiry-date">Expiry Date (MM/YY):</label>
+        <input type="text" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="number" required>
+
+        <input type="submit" value="Submit Payment">
+    </form>
+
+</div>
+</div>
+<div class="last">
+    <div class="bottom">
+         <div class="bottom1">
+              <h3 class="bat1">Enroll with us</h3>
+<p class="bat">How to apply</p>
+<p class="bat">Admissions</p>
+<p class="bat">Fee structure</p>
+<p class="bat">Student welfare</p>
+<p class="bat">Help desk</p>
+</div>
+<div class="bottom1">
+<h3 class="bat1">About us</h3>
+<p class="bat">About REC</p>
+<p class="bat">The Chairman desk</p>
+<p class="bat">Governing Council</p>
+<p class="bat">Grievances Cell</p>
+</div>
+<div class="bottom1">
+<h3 class="bat1">Grow with us</h3>
+<p class="bat" >Placements</p>
+<p class="bat">Carere Development</p>
+<p class="bat">Incubation Center</p>
+<p class="bat">RAGHU Connects MATLAB</p>
+<p class="bat">Culture at REC</p>
+<p class="bat">Alumini</p>
+<p class="bat">Jobs at REC</p>
+
+</div>
+<div class="bottom2">
+<h3 class="bat1">Quick Links</h3>
+<p class="bat">Innovation and Startup Policies</p>
+<p class="bat">AICTE</p>
+<p class="bat">IIC</p>
+<p class="bat">RTI</p>
+<p class="bat">Mandatory-Disclosure</p>
+<p class="bat">IQAC</p>
+<p class="bat">NAAC</p>
+<p class="bat">Academic Bank of Credits (ABC)</p>
+<p class="bat">Ombudsman</p>
+<p class="bat">GRIEVANCE</p>
+<ul class="bat2">
+<li >Staff Grievance & Redressal</li>
+<li>Women Grievance & Redressal</li>
+<li> Students Grievance & Redressal</li>
+</ul>  
+<p class="bat">Skill Enhancement Activity</p>
+<p class="bat">Code of Conduct</p>
+<p class="bat">Best Practices</p>
+<p class="bat">Self-Declaration</p>
+<p class="bat">Policies</p>
+</div>
+<div class="bottom3">
+<h3 class="bat1">Get in touch with us</h3>
+<p class="bat">info@raghuengcollege.in</p>
+<p class="bat">08922-248001 /248002</p>
+<p class="bat">8297355115</p>
+<p class="bat">(Training & Placements)</p>
+<p class="bat">Dakamarri,Bheemunipatnam mandal,Visakhapatnam-531162</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
